@@ -11,7 +11,6 @@ const Navigation = (props) => {
         fullWidth={true}
         size='large'
         style={{justifyContent: 'start', paddingLeft: '20px', color: '#0B5563'}}
-        onMouseOver={() => {}}
       >
         {elem}
       </Button>
