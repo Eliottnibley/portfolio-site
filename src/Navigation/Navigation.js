@@ -2,15 +2,15 @@ import './Navigation.css'
 import Button from '@material-ui/core/Button'
 
 const Navigation = (props) => {
-  const sections = ['About', 'Experience', 'Projects', 'Skills', 'Education', 'Contact', 'Resume']
 
-  const sectionsArray = sections.map((elem) => {
+  const sectionsArray = props.sections.map((elem) => {
     return (
       <Button 
         className='nav-button'
         fullWidth={true}
         size='large'
         style={{justifyContent: 'start', paddingLeft: '20px', color: '#0B5563'}}
+        onClick={() => {props.updateScroll(elem)}}
       >
         {elem}
       </Button>
@@ -19,7 +19,7 @@ const Navigation = (props) => {
 
   return (
     <div className="navigation-container">
-      <div className='name-and-title'>
+      <div className='name-and-title' onClick={() => {props.updateScroll('name')}}>
         <h1>
           Eliott Nibley
         </h1>
