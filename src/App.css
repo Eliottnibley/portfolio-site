@@ -7,14 +7,18 @@
 
 #contents-container {
   margin-left: 250px;
-  background-color: #FAFAFA;
+  background-color: #f7f7f7;
   width: calc(100vw - 250px);
   min-height: 100vh;
 }
 
-#contents-container > div {
-  min-height: 50vh;
-  width: 100%;
+section > div {
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-header {
@@ -27,5 +31,6 @@
   padding-left: 20px;
   color: #FFFFFF;
   font-size: 50px;
+  font-weight: 100;
 }
 

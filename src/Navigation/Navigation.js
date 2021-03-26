@@ -9,6 +9,7 @@ const Navigation = (props) => {
         className='nav-button'
         fullWidth={true}
         size='large'
+        key={elem}
         style={{justifyContent: 'start', paddingLeft: '20px', color: '#0B5563'}}
         onClick={() => {props.updateScroll(elem)}}
       >
@@ -18,7 +19,7 @@ const Navigation = (props) => {
   })
 
   return (
-    <div className="navigation-container">
+    <div id="navigation-container">
       <div className='name-and-title' onClick={() => {props.updateScroll('name')}}>
         <h1>
           Eliott Nibley

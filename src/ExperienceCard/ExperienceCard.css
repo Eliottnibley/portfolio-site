@@ -1,0 +1,50 @@
+.experience-card-container {
+  background-color: #ffffff;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px #dddddd;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.company-name {
+  color: #0b5563;
+  font-size: 35px;
+}
+
+.job-title {
+  color: #db9d47;
+  font-size: 25px;
+}
+
+.job-description {
+  font-size: 18px;
+  color: grey;
+  font-style: italic;
+}
+
+.job-responsibilities {
+  margin: 15px;
+  font-size: 15px;
+}
+
+.job-responsibilities > li {
+  margin: 5px;
+}
+
+.job-footer {
+  border-top: 1px solid #dddddd;
+  padding-top: 5px;
+  color: #0b5563;
+}
