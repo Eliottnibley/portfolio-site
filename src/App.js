@@ -7,6 +7,7 @@ import PrjCard from './ProjectCard/ProjectCard'
 
 function App() {
   const [sections, setSections] = useState(['about', 'experience', 'projects', 'skills', 'education', 'contact', 'resume'])
+  const [headerIsHidden, setheaderIsHidden] = useState(false)
 
   const updateScroll = (section) => {
     if (section === 'resume') {
@@ -27,6 +28,9 @@ function App() {
 
   return (
     <div className="App">
+      <div id='mobile-header'>
+
+      </div>
       <Nav sections={sections} updateScroll={updateScroll}/>
       <div id='contents-container'>
         <section id='photo-container'>

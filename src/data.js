@@ -1,3 +1,5 @@
+import dataSpeaks from './assets/dataSpeaks.png'
+
 export const data = {
   'about': {
 
@@ -59,42 +61,42 @@ export const data = {
 
   'projects': [
     {
-      'name': '',
+      'name': 'DataSpeaks.us',
       'description': '',
       'frontend': '', 
       'backend': '',
       'otherTech' : '',
-      'image' : '', 
+      'image' : dataSpeaks, 
       'siteLink': '',
       'gitLink': ''
     },
     {
-      'name': '',
+      'name': 'DataSpeaks.us',
       'description': '',
       'frontend': '', 
       'backend': '',
       'otherTech' : '',
-      'image' : '', 
+      'image' : dataSpeaks, 
       'siteLink': '',
       'gitLink': ''
     },
     {
-      'name': '',
+      'name': 'DataSpeaks.us',
       'description': '',
       'frontend': '', 
       'backend': '',
       'otherTech' : '',
-      'image' : '', 
+      'image' : dataSpeaks, 
       'siteLink': '',
       'gitLink': ''
     },
     {
-      'name': '',
+      'name': 'DataSpeaks.us',
       'description': '',
       'frontend': '', 
       'backend': '',
       'otherTech' : '',
-      'image' : '', 
+      'image' : dataSpeaks, 
       'siteLink': '',
       'gitLink': ''
     }

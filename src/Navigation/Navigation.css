@@ -5,6 +5,7 @@
   padding: 0px;
   position: fixed;
   box-shadow: -10px 0px 20px grey;
+  overflow: hidden;
 }
 
 .name-and-title {
@@ -43,4 +44,34 @@
 
 .nav-button {
   font-weight: 700;
+}
+
+#mobile-header {
+  display: none;
+  height: 0px;
+}
+
+@media(max-width: 800px) {
+  #navigation-container {
+    width: 0px;
+  }
+
+  .name-and-title {
+    height: 0px;
+    display: none;
+  }
+
+  #mobile-header {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    width: 100vw;
+    background-color: #fbfbfb;
+    box-shadow: 0px 0px 10px grey;
+  }
+
+  .App {
+    padding-top: 60px;
+  }
 }
