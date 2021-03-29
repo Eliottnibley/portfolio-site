@@ -14,6 +14,9 @@ const ExperienceCard = ({ expData }) => {
           {expData.jobTitle}
         </div>
       </div>
+      <div className='mobile-job-title'>
+          {expData.jobTitle}
+      </div>
       <div className='job-description'>
         {expData.description}
       </div>

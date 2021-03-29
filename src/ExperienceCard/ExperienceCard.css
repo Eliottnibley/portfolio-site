@@ -47,4 +47,43 @@
   border-top: 1px solid #dddddd;
   padding-top: 5px;
   color: #0b5563;
+  font-size: 15px;
+}
+
+.mobile-job-title {
+  display: none;
+}
+
+@media(max-width: 550px) {
+  .company-name {
+    font-size: 25px;
+  }
+  
+  .job-title {
+    font-size: 18px;
+  }
+  
+  .job-description {
+    font-size: 15px;
+  }
+  
+  .job-responsibilities {
+    font-size: 13px;
+  }
+  
+  .job-footer {
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 450px) {
+  .job-title {
+    display: none;
+  }
+
+  .mobile-job-title {
+    display: flex;
+    margin-bottom: 10px;
+    color: #db9d47;
+  }
 }

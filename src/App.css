@@ -97,3 +97,23 @@ section > div {
     color: #DB9D47;
   }
 }
+
+@media (max-width: 550px) {
+  #mobile-header {
+  }
+
+  #mobile-header > h1 {
+    font-size: 18px;
+  }
+
+  #mobile-header > h2 {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+
+  .section-header {
+    height: 50px;
+    padding-left: 20px;
+    font-size: 30px;
+  }
+}
