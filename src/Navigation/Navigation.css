@@ -46,6 +46,24 @@
   font-weight: 700;
 }
 
+#mobile-nav-container-false {
+  position: fixed;
+  width: 0px;
+  height: 100%;
+  overflow: hidden;
+  transition: 500ms;
+  background-color: #ffffff;
+}
+
+#mobile-nav-container-true {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  overflow: hidden;
+  transition: 500ms;
+  background-color: #ffffff;
+}
+
 @media(max-width: 800px) {
   #navigation-container {
     width: 0px;

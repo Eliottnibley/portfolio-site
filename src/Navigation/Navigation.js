@@ -19,7 +19,7 @@ const Navigation = (props) => {
   })
 
   return (
-    <div id="navigation-container">
+    <div id='navigation-container'>
       <div className='name-and-title' onClick={() => {props.updateScroll('name')}}>
         <h1>
           Eliott Nibley

@@ -1,15 +1,17 @@
 import { useState } from 'react';
 import './App.css';
 import { data } from './data'
-import { withStyles,  } from '@material-ui/core/styles'
+import { withStyles } from '@material-ui/core/styles'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Nav from './Navigation/Navigation'
 import ExpCard from './ExperienceCard/ExperienceCard'
 import PrjCard from './ProjectCard/ProjectCard'
+import Button from '@material-ui/core/Button'
 
 function App() {
   const [sections, setSections] = useState(['about', 'experience', 'projects', 'skills', 'education', 'contact', 'resume'])
+  const [navIsOpen, setNavIsOpen] = useState(false)
 
   const updateScroll = (section) => {
     if (section === 'resume') {
@@ -19,14 +21,8 @@ function App() {
       window.scrollTo(0, 0)
       return
     }
-    window.scrollTo(0, 1 + window.scrollY + document.getElementById(`${section}-container`).getBoundingClientRect().y)
+    window.scrollTo(0, (window.innerWidth <= 800 ? -59 : 1) + window.scrollY + document.getElementById(`${section}-container`).getBoundingClientRect().y)
   }
-
-  const menuButton = withStyles({
-    root: {
-      color: '#0B5563'
-    }
-  })
 
   // Create experience card components from projects array in data file
   const experienceMap = data.experience.map((elem, ind) => <ExpCard key={ind} expData={elem}/>)
@@ -34,16 +30,38 @@ function App() {
   // Create project card components from projects array in data file
   const projectmap = data.projects.map((elem, ind) => <PrjCard key={ind} prjData={elem}/>)
 
+  // mapping sections used for mobile navigation tab
+  const mobileNavArray = sections.map((elem) => {
+    return (
+      <Button 
+        className='mobile-nav-button'
+        fullWidth={true}
+        size='large'
+        key={elem}
+        style={{justifyContent: 'start', paddingLeft: '20px', color: '#0B5563'}}
+        onClick={() => {
+          updateScroll(elem)
+          setNavIsOpen(false)
+        }}
+      >
+        {elem}
+      </Button>
+    )
+  })
+
   return (
     <div className="App">
       <div id='mobile-header'>
         <div id='mobile-menu-button'>
-          <IconButton color='primary'>
+          <IconButton onClick={() => setNavIsOpen(!navIsOpen)} style={{color: '#0B5563'}}>
             <MenuIcon/>
           </IconButton>
         </div>
         <h1>Eliott Nibley</h1>
         <h2>Web Developer and Software Engineer</h2>
+      </div>
+      <div id={`mobile-nav-container-${navIsOpen}`}>
+        {mobileNavArray}
       </div>
       <Nav sections={sections} updateScroll={updateScroll}/>
       <div id='contents-container'>
