@@ -1,5 +1,90 @@
 .project-card-container {
-  height: 350px;
+  height: 400px;
   background-color: #ffffff;
   box-shadow: 0px 0px 10px #dddddd;
+  overflow: hidden;
+}
+
+.project-card-front {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  transition: 250ms;
+}
+
+.project-image-container {
+  width: 100%;
+  height: 65%;
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-card-front > span {
+  width: auto;
+  height: 50px;
+  padding-left: 10px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-card-front > span > div {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b5563;
+}
+
+.project-card-front > p {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  color: grey;
+}
+
+.project-card-more {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  transition: 250ms;
+  padding: 15px;
+}
+
+.more-header {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0b5563;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-card-container h4 {
+  color: #db9d47;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.project-card-more > span {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.project-card-more > span > img {
+  height: 100%;
+  margin: 5px;
+}
+
+.tooltip {
+  background-color: rgb(51, 51, 51);
 }

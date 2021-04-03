@@ -1,5 +1,3 @@
-import dataSpeaks from './assets/dataSpeaks.png'
-
 export const data = {
   'about': {
 
@@ -62,41 +60,41 @@ export const data = {
   'projects': [
     {
       'name': 'DataSpeaks.us',
-      'description': '',
-      'frontend': '', 
-      'backend': '',
-      'otherTech' : '',
-      'image' : dataSpeaks, 
+      'description': 'This site features interactive maps and charts with information pertaining to systematic racism.',
+      'frontend': ['React', 'Javascript', 'HTML5', 'CSS3'], 
+      'backend': ['NodeJS', 'PostgreSQL'],
+      'otherTech' : ['npm', 'DigitalOcean', 'MaterialUI', 'Heroku'],
+      'image' : 'dataSpeaks.png', 
       'siteLink': '',
       'gitLink': ''
     },
     {
       'name': 'DataSpeaks.us',
-      'description': '',
-      'frontend': '', 
-      'backend': '',
-      'otherTech' : '',
-      'image' : dataSpeaks, 
+      'description': 'This site features interactive maps and charts with information pertaining to systematic racism.',
+      'frontend': ['React', 'Javascript', 'HTML5', 'CSS3'], 
+      'backend': ['NodeJS', 'PostgreSQL'],
+      'otherTech' : ['npm', 'DigitalOcean', 'MaterialUI', 'Heroku'],
+      'image' : 'dataSpeaks.png', 
       'siteLink': '',
       'gitLink': ''
     },
     {
       'name': 'DataSpeaks.us',
-      'description': '',
-      'frontend': '', 
-      'backend': '',
-      'otherTech' : '',
-      'image' : dataSpeaks, 
+      'description': 'This site features interactive maps and charts with information pertaining to systematic racism.',
+      'frontend': ['React', 'Javascript', 'HTML5', 'CSS3'], 
+      'backend': ['NodeJS', 'PostgreSQL'],
+      'otherTech' : ['npm', 'DigitalOcean', 'MaterialUI', 'Heroku'],
+      'image' : 'dataSpeaks.png', 
       'siteLink': '',
       'gitLink': ''
     },
     {
       'name': 'DataSpeaks.us',
-      'description': '',
-      'frontend': '', 
-      'backend': '',
-      'otherTech' : '',
-      'image' : dataSpeaks, 
+      'description': 'This site features interactive maps and charts with information pertaining to systematic racism.',
+      'frontend': ['React', 'Javascript', 'HTML5', 'CSS3'], 
+      'backend': ['NodeJS', 'PostgreSQL'],
+      'otherTech' : ['npm', 'DigitalOcean', 'MaterialUI', 'Heroku'],
+      'image' : 'dataSpeaks.png', 
       'siteLink': '',
       'gitLink': ''
     }

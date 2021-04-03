@@ -16,6 +16,14 @@
   min-height: 100vh;
 }
 
+#photo-container {
+  height: 100vh;
+}
+
+section {
+  min-height: 50vh;
+}
+
 section > div {
   padding: 20px;
   padding-left: 60px;
@@ -107,6 +115,10 @@ section > div {
     font-size: 12px;
   }
 
+  #projects-content {
+    grid-template-columns: auto;
+  }
+
   .section-header {
     height: 50px;
     padding-left: 20px;
@@ -118,6 +130,11 @@ section > div {
   #mobile-header > h2 {
     width: 150px;
     text-align: center;
+  }
+
+  #projects-content {
+    grid-gap: 20px;
+    padding: 20px;
   }
 
   section > div {
