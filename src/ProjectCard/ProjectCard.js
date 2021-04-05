@@ -1,6 +1,10 @@
 import IconButton from '@material-ui/core/IconButton'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import LinkIcon from '@material-ui/icons/Link';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import Tooltip from '@material-ui/core/Tooltip';
+import Zoom from '@material-ui/core/Zoom';
 import { useState } from 'react';
 import './ProjectCard.css'
 
@@ -8,15 +12,21 @@ const ProjectCard = ({prjData}) => {
   const [showMore, setShowMore] = useState(false)
 
   const frontEndMap = prjData.frontend.map((elem, ind) => (
-    <img src={`/assets/${elem}.png`} title={elem} key={ind}/>
+    <Tooltip title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
+      <img src={`/assets/${elem}.png`} key={ind}/>
+    </Tooltip>
   ))
 
   const backEndMap = prjData.backend.map((elem, ind) => (
-    <img src={`/assets/${elem}.png`} title={elem} key={ind}/>
+    <Tooltip title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
+      <img src={`/assets/${elem}.png`} key={ind}/>
+    </Tooltip>
   ))
 
   const otherMap = prjData.otherTech.map((elem, ind) => (
-    <img src={`/assets/${elem}.png`} title={elem} key={ind}/>
+    <Tooltip title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
+      <img src={`/assets/${elem}.png`} key={ind}/>
+    </Tooltip>
   ))
 
   return (
@@ -45,6 +55,23 @@ const ProjectCard = ({prjData}) => {
         <span>{backEndMap}</span>
         <h4>Other</h4>
         <span>{otherMap}</span>
+        <h4>Links</h4>
+        <div className='site-links'>
+          <Tooltip title='View Site' placement='bottom' TransitionComponent={Zoom} arrow>
+            <a href={prjData.siteLink} target='_blank'>
+              <IconButton style={{color: '#0b5563'}}>
+                <LinkIcon/>
+              </IconButton>
+            </a>
+          </Tooltip>
+          <Tooltip title='View Source' placement='bottom' TransitionComponent={Zoom} arrow>
+            <a href={prjData.gitLink} target='_blank'>
+              <IconButton style={{color: '#0b5563'}}>
+                <GitHubIcon/>
+              </IconButton>
+            </a>
+          </Tooltip>
+        </div>
       </div>
     </div>
   )

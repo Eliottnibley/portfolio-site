@@ -85,6 +85,8 @@
   margin: 5px;
 }
 
-.tooltip {
-  background-color: rgb(51, 51, 51);
+.site-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
