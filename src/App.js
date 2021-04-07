@@ -6,6 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import Nav from './Navigation/Navigation'
 import ExpCard from './ExperienceCard/ExperienceCard'
 import PrjCard from './ProjectCard/ProjectCard'
+import SklCard from './SkillsCard/SkillsCard'
 import Button from '@material-ui/core/Button'
 
 function App() {
@@ -98,7 +99,10 @@ function App() {
             Skills
           </h3>
           <div id='skills-content'>
-
+            <SklCard section='Front-End' data={data.skills.frontEnd}/>
+            <SklCard section='Back-End' data={data.skills.backEnd}/>
+            <SklCard section='Libraries/Frameworks' data={data.skills.libraries}/>
+            <SklCard section='Other' data={data.skills.other}/>
           </div>
         </section>
         <section id='education-container'>

@@ -12,26 +12,26 @@ const ProjectCard = ({prjData}) => {
   const [showMore, setShowMore] = useState(false)
 
   const frontEndMap = prjData.frontend.map((elem, ind) => (
-    <Tooltip title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
-      <img src={`/assets/${elem}.png`} key={ind}/>
+    <Tooltip key={ind} title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
+      <img src={`/assets/${elem}.png`}/>
     </Tooltip>
   ))
 
   const backEndMap = prjData.backend.map((elem, ind) => (
-    <Tooltip title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
-      <img src={`/assets/${elem}.png`} key={ind}/>
+    <Tooltip key={ind} title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
+      <img src={`/assets/${elem}.png`}/>
     </Tooltip>
   ))
 
   const otherMap = prjData.otherTech.map((elem, ind) => (
-    <Tooltip title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
-      <img src={`/assets/${elem}.png`} key={ind}/>
+    <Tooltip key={ind} title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
+      <img src={`/assets/${elem}.png`}/>
     </Tooltip>
   ))
 
   return (
     <div className='project-card-container'>
-      <div className='project-card-front' style={{height: showMore ? '0px' : '100%'}}>
+      <div className='project-front' style={{height: showMore ? '0px' : '100%'}}>
         <div className='project-image-container' style={{backgroundImage: `url(/assets/${prjData.image})`}}>
         </div>
         <span>
@@ -42,7 +42,7 @@ const ProjectCard = ({prjData}) => {
         </span>
         <p>{prjData.description}</p>
       </div>
-      <div className='project-card-more' style={{height: showMore ? '100%' : '0px'}}>
+      <div className='project-more' style={{height: showMore ? '100%' : '0px'}}>
         <div className='more-header'>
           <div>TECH USED</div>
           <IconButton onClick={() => setShowMore(!showMore)} style={{color: '#0B5563'}}>

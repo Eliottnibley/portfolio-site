@@ -100,9 +100,14 @@ export const data = {
     }
   ],
 
-  'skills': {},
+  'skills': {
+    'frontEnd' : ['HTML5', 'CSS3', 'Javascript', 'Typescript'],
+    'backEnd' : ['PostgreSQL', 'NodeJS', 'MySQL'],
+    'libraries' : ['React', 'Ionic', 'MaterialUI'],
+    'other' : ['DigitalOcean', 'GitHub', 'Heroku', 'Java', 'npm']
+  },
 
-  'educations': {},
+  'education': {},
 
   'contact': {}
 }
