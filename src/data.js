@@ -75,8 +75,8 @@ export const data = {
       'backend': ['NodeJS', 'PostgreSQL'],
       'otherTech' : ['npm', 'DigitalOcean', 'MaterialUI', 'Heroku'],
       'image' : 'dataSpeaks.png', 
-      'siteLink': '',
-      'gitLink': ''
+      'siteLink': 'https://dataspeaks.us',
+      'gitLink': 'https://github.com/Stories-with-Data/dataspeaks'
     },
     {
       'name': 'DataSpeaks.us',

@@ -1,5 +1,6 @@
 import './ExperienceCard.css'
 
+// this is an expericne card
 const ExperienceCard = ({ expData }) => {
 
   const responsibilitiesMap = expData.responsibilities.map((elem, ind) => <li key={ind}>{elem}</li>)
