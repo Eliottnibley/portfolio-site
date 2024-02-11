@@ -32,7 +32,7 @@ const ProjectCard = ({ prjData }) => {
   return (
     <div className='project-card-container'>
       <div className='project-front' style={{ height: showMore ? '0px' : '100%' }}>
-        <div className='project-image-container' style={{ backgroundImage: `url(/assets/${prjData.image})` }}>
+        <div className='project-image-container' style={{ backgroundImage: `url(./assets/${prjData.image})` }}>
         </div>
         <span>
           <div>{prjData.name}</div>
