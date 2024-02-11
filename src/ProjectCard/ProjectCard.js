@@ -8,45 +8,45 @@ import Zoom from '@material-ui/core/Zoom';
 import { useState } from 'react';
 import './ProjectCard.css'
 
-const ProjectCard = ({prjData}) => {
+const ProjectCard = ({ prjData }) => {
   const [showMore, setShowMore] = useState(false)
 
   const frontEndMap = prjData.frontend.map((elem, ind) => (
     <Tooltip key={ind} title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
-      <img src={`/assets/${elem}.png`}/>
+      <img src={`./assets/${elem}.png`} />
     </Tooltip>
   ))
 
   const backEndMap = prjData.backend.map((elem, ind) => (
     <Tooltip key={ind} title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
-      <img src={`/assets/${elem}.png`}/>
+      <img src={`./assets/${elem}.png`} />
     </Tooltip>
   ))
 
   const otherMap = prjData.otherTech.map((elem, ind) => (
     <Tooltip key={ind} title={elem} placement='bottom' TransitionComponent={Zoom} arrow>
-      <img src={`/assets/${elem}.png`}/>
+      <img src={`./assets/${elem}.png`} />
     </Tooltip>
   ))
 
   return (
     <div className='project-card-container'>
-      <div className='project-front' style={{height: showMore ? '0px' : '100%'}}>
-        <div className='project-image-container' style={{backgroundImage: `url(/assets/${prjData.image})`}}>
+      <div className='project-front' style={{ height: showMore ? '0px' : '100%' }}>
+        <div className='project-image-container' style={{ backgroundImage: `url(/assets/${prjData.image})` }}>
         </div>
         <span>
           <div>{prjData.name}</div>
-          <IconButton onClick={() => setShowMore(!showMore)} style={{color: '#0B5563'}}>
-            <MoreHorizIcon/>
+          <IconButton onClick={() => setShowMore(!showMore)} style={{ color: '#0B5563' }}>
+            <MoreHorizIcon />
           </IconButton>
         </span>
         <p>{prjData.description}</p>
       </div>
-      <div className='project-more' style={{height: showMore ? '100%' : '0px'}}>
+      <div className='project-more' style={{ height: showMore ? '100%' : '0px' }}>
         <div className='more-header'>
           <div>TECH USED</div>
-          <IconButton onClick={() => setShowMore(!showMore)} style={{color: '#0B5563'}}>
-            <ArrowBackIcon/>
+          <IconButton onClick={() => setShowMore(!showMore)} style={{ color: '#0B5563' }}>
+            <ArrowBackIcon />
           </IconButton>
         </div>
         <h4>Front-end</h4>
@@ -59,15 +59,15 @@ const ProjectCard = ({prjData}) => {
         <div className='site-links'>
           <Tooltip title='View Site' placement='bottom' TransitionComponent={Zoom} arrow>
             <a href={prjData.siteLink} target='_blank'>
-              <IconButton style={{color: '#0b5563'}}>
-                <LinkIcon/>
+              <IconButton style={{ color: '#0b5563' }}>
+                <LinkIcon />
               </IconButton>
             </a>
           </Tooltip>
           <Tooltip title='View Source' placement='bottom' TransitionComponent={Zoom} arrow>
             <a href={prjData.gitLink} target='_blank'>
-              <IconButton style={{color: '#0b5563'}}>
-                <GitHubIcon/>
+              <IconButton style={{ color: '#0b5563' }}>
+                <GitHubIcon />
               </IconButton>
             </a>
           </Tooltip>
