@@ -1,6 +1,7 @@
 import './Navigation.css'
 import Button from '@material-ui/core/Button'
 import { useState } from 'react'
+import { data } from '../data'
 
 const Navigation = (props) => {
 
@@ -50,13 +51,13 @@ const Navigation = (props) => {
     const margin = highlighted == elem ? '20px' : '0px'
     const color = highlighted == elem ? '#0B556320' : '#FFFFFF'
     return (
-      <Button 
+      <Button
         className='nav-button'
         fullWidth={true}
         size='large'
         key={elem}
-        style={{justifyContent: 'start', paddingLeft: '20px', color: '#0B5563', fontWeight: weight, transition: '250ms', marginLeft: margin, backgroundColor: color}}
-        onClick={() => {props.updateScroll(elem)}}
+        style={{ justifyContent: 'start', paddingLeft: '20px', color: '#0B5563', fontWeight: weight, transition: '250ms', marginLeft: margin, backgroundColor: color }}
+        onClick={() => { props.updateScroll(elem) }}
       >
         {elem}
       </Button>
@@ -65,12 +66,12 @@ const Navigation = (props) => {
 
   return (
     <div id='navigation-container'>
-      <div className='name-and-title' onClick={() => {props.updateScroll('name')}}>
+      <div className='name-and-title' onClick={() => { props.updateScroll('name') }}>
         <h1>
-          Eliott Nibley
+          {data.name}
         </h1>
         <h2>
-          Web Developer and Software Engineer
+          {data.title}
         </h2>
       </div>
       <div className='nav-options'>
