@@ -9,6 +9,7 @@ import EduCard from './EducationCard/EducationCard'
 import PrjCard from './ProjectCard/ProjectCard'
 import SklCard from './SkillsCard/SkillsCard'
 import Button from '@material-ui/core/Button'
+import AboutCard from './AboutCard/AboutCard'
 
 function App() {
   const sections = ['about', 'experience', 'projects', 'skills', 'education', 'contact', 'resume']
@@ -79,7 +80,7 @@ function App() {
             About
           </h3>
           <div id='about-content'>
-
+            <AboutCard aboutData={data.about} />
           </div>
         </section>
         <section id='experience-container'>
