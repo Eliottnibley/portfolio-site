@@ -98,6 +98,7 @@ section>div {
     width: 100%;
     background-color: #fbfbfb;
     box-shadow: 0px 0px 10px grey;
+    z-index: 100;
   }
 
   #mobile-header>h1 {

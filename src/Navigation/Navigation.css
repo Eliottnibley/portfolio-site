@@ -19,7 +19,7 @@
   background-color: #fbfbfb;
 }
 
-.name-and-title > h1 {
+.name-and-title>h1 {
   font-size: 40px;
   font-weight: 400;
   text-align: left;
@@ -28,7 +28,7 @@
   font-weight: 600;
 }
 
-.name-and-title > h2 {
+.name-and-title>h2 {
   font-size: 20px;
   font-weight: 400;
   text-align: left;
