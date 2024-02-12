@@ -31,12 +31,12 @@ const ProjectCard = ({ prjData }) => {
 
   return (
     <div className='project-card-container'>
-      <div className='project-front' style={{ height: showMore ? '0px' : '100%' }}>
+      <div className='project-front' onClick={() => setShowMore(!showMore)} style={{ height: showMore ? '0px' : '100%' }}>
         <div className='project-image-container' style={{ backgroundImage: `url(./assets/${prjData.image})` }}>
         </div>
         <span>
           <div>{prjData.name}</div>
-          <IconButton onClick={() => setShowMore(!showMore)} style={{ color: '#0B5563' }}>
+          <IconButton style={{ color: '#0B5563' }}>
             <MoreHorizIcon />
           </IconButton>
         </span>
